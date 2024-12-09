@@ -6,7 +6,25 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./js/snippets.js">
-   
+    <style>
+        /* Додано CSS для фіксації таблиці */
+        .third {
+            position: sticky;
+            top: 0;
+            z-index: 10; /* Залишає таблицю на передньому плані */
+            margin-top: -30px; /* Переміщає блок трохи вище */
+        }
+
+        /* Додано трохи більше простору для акордеона */
+        .second {
+            margin-top: 40px;
+        }
+
+        /* Можна додати стилі для акордеона, щоб він не перекривав таблицю */
+        .accordion-button {
+            background: rgba(199, 140, 140, 0.2);
+        }
+    </style>
 </head>
 <body>
  
@@ -141,50 +159,40 @@
 </div>
 
 
-<div class="third"><table class="table">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Ім'я</th>
-        <th scope="col">Фамілія</th>
-        <th scope="col">Вузол</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Лев</td>
-        <td>Омельченко</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Яюс</td>
-        <td>Ростислав</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td colspan="2">Олег Павлеса</td>
-        <td>@twitter</td>
-      </tr>
-    </tbody>
-  </table></div>
-
-
-
-
-
-
-
-
-
-
-
-
+<div class="third">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Ім'я</th>
+                <th scope="col">Фамілія</th>
+                <th scope="col">Вузол</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Лев</td>
+                <td>Омельченко</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Яюс</td>
+                <td>Ростислав</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Олег Павлеса</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
     <!--scripts-->
-    
     <script src="./js/bootstrap.js"></script>
 </body>
 </html>
+ф
